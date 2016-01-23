@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 12:15:59 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="northwind.dto.Products" table="products" schema="public">
+        <id name="productId" type="short">
+            <column name="ProductID" />
+            <generator class="assigned" />
+        </id>
+        <property name="productName" type="string">
+            <column name="ProductName" length="40" not-null="true" />
+        </property>
+        <property name="supplierId" type="java.lang.Short">
+            <column name="SupplierID" />
+        </property>
+        <property name="categoryId" type="java.lang.Short">
+            <column name="CategoryID" />
+        </property>
+        <property name="quantityPerUnit" type="string">
+            <column name="QuantityPerUnit" length="20" />
+        </property>
+        <property name="unitPrice" type="java.lang.Float">
+            <column name="UnitPrice" precision="4" scale="0" />
+        </property>
+        <property name="unitsInStock" type="java.lang.Short">
+            <column name="UnitsInStock" />
+        </property>
+        <property name="unitsOnOrder" type="java.lang.Short">
+            <column name="UnitsOnOrder" />
+        </property>
+        <property name="reorderLevel" type="java.lang.Short">
+            <column name="ReorderLevel" />
+        </property>
+        <property name="discontinued" type="int">
+            <column name="Discontinued" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

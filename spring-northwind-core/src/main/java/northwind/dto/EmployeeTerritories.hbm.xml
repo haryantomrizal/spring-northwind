@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 12:15:59 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="northwind.dto.EmployeeTerritories" table="employeeterritories" schema="public">
+        <composite-id name="id" class="northwind.dto.EmployeeTerritoriesId">
+            <key-property name="employeeId" type="short">
+                <column name="EmployeeID" />
+            </key-property>
+            <key-property name="territoryId" type="string">
+                <column name="TerritoryID" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

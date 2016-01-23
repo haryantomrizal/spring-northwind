@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 12:15:59 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="northwind.dto.CustomerDemographics" table="customerdemographics" schema="public">
+        <id name="customerTypeId" type="char">
+            <column name="CustomerTypeID" length="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="customerDesc" type="string">
+            <column name="CustomerDesc" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,2 +1,3 @@
-# spring-northwind
-Spring Application. Experiment with several RDBMS and NoSQL technologies using Northwind database.
+# Spring Northwind
+
+An experiment with several RDBMS and NoSQL technologies using Northwind database.

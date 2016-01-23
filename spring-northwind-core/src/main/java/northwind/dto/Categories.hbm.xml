@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 12:15:59 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="northwind.dto.Categories" table="categories" schema="public">
+        <id name="categoryId" type="short">
+            <column name="CategoryID" />
+            <generator class="assigned" />
+        </id>
+        <property name="categoryName" type="string">
+            <column name="CategoryName" length="15" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="Description" />
+        </property>
+        <property name="picture" type="binary">
+            <column name="Picture" />
+        </property>
+    </class>
+</hibernate-mapping>

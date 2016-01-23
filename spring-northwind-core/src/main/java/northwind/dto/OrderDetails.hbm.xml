@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 12:15:59 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="northwind.dto.OrderDetails" table="order_details" schema="public">
+        <composite-id name="id" class="northwind.dto.OrderDetailsId">
+            <key-property name="orderId" type="short">
+                <column name="OrderID" />
+            </key-property>
+            <key-property name="productId" type="short">
+                <column name="ProductID" />
+            </key-property>
+        </composite-id>
+        <property name="unitPrice" type="float">
+            <column name="UnitPrice" precision="4" scale="0" not-null="true" />
+        </property>
+        <property name="quantity" type="short">
+            <column name="Quantity" not-null="true" />
+        </property>
+        <property name="discount" type="float">
+            <column name="Discount" precision="4" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
